@@ -1,9 +1,8 @@
 def pig_latin(text):
+
     lst = text.split()
-    lst2 = []
+    lst2, lst3, punctuation = [], [], []
     output = ""
-    lst3 = []
-    punctuation = []
     for i in lst:
         lst2.extend(i)
         if i == "!" or i == "?":
@@ -25,6 +24,6 @@ def pig_latin(text):
 
 
 print("___PIG_LATIN___")
-user_input = input("Enter the word you want to translate to Pig Latin:")
-print("You've entered:", user_input)
-print(user_input, "translated to Pig Latin is:", pig_latin(user_input))
+user_input = input("Enter the word you want to translate to Pig Latin:\n")
+print("You've entered:\n", user_input)
+print("Translated to Pig Latin is:\n", pig_latin(user_input))
