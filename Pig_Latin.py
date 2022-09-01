@@ -25,5 +25,5 @@ def pig_latin(text):
 
 print("___PIG_LATIN___")
 user_input = input("Enter the word you want to translate to Pig Latin:\n")
-print("You've entered:\n", user_input)
-print("Translated to Pig Latin is:\n", pig_latin(user_input))
+print("You've entered:\n" + str(user_input))
+print("Translated to Pig Latin:\n" + str(pig_latin(user_input)))
